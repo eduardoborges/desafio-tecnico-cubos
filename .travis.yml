@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "8"
+before_script:
+  - npm i
+cache:
+  directories:
+    - "node_modules"
+script:
+  - npm run build
+deploy:
+  provider: surge
+  project: ./build/
+  domain: react-dudu-starter.surge.sh
