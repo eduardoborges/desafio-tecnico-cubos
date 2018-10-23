@@ -1,11 +1,11 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import MainContainer from "./containers/MainContainer";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import MoviesContainer from './containers/MoviesContainer';
 
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/" exact component={MainContainer} />
+      <Route path="/" exact component={MoviesContainer} />
       <Route path="*" render={() => <h1>Not Found</h1>} />
     </Switch>
   );
