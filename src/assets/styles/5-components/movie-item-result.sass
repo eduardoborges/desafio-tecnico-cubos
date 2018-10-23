@@ -1,0 +1,70 @@
+.movie-item-result
+  text-decoration: none
+  color: inherit
+  margin: 30px 0
+  display: inline-block
+  background: #EEE
+  &:hover
+    box-shadow: 0 0 3px 0.1px #000
+  .columns
+    display: flex
+  .cover
+    margin: 0
+    padding: 0
+    width: 250px
+    img
+      width: 100%
+  .details
+    position: relative
+    > .title
+      background: $primary
+      color: $primary-inverted
+      font-size: 30px
+      line-height: 30px
+      padding: 2.5rem 2.5rem 0.2rem 6rem
+    > .vote
+      position: absolute
+      top: 2.5rem
+      left: 1.5rem
+      display: flex
+      justify-content: center
+      align-items: center
+      line-height: 0
+      height: 60px
+      width: 60px
+      background: $primary-inverted
+      border-radius: 300px
+      font-family:  "Abel"
+      font-size: 20px
+      color: white
+      border: 3px solid $primary
+      z-index: 2
+      &::after
+        content: ""
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        transform: scale(0.9)
+        border-radius: 300px
+        background: $primary
+        z-index: -1
+    > .release
+      padding: 3rem 2.5rem 0.2rem 6rem
+      font-size: 18px
+      color: #888
+    > .overview
+      padding: 1.5rem 2.5rem 0.2rem 1.5rem
+      color: #555
+      > .genres span
+        display: inline-block
+        padding: 5px 15px
+        margin-right: 10px
+        font-size: 12px
+        background: #FAFAFA
+        color: $primary
+        border: solid 1px
+        border-radius: 30px
+
+

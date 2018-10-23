@@ -1,10 +1,10 @@
-# React Starter Project
+# Desafio técnico web - processo seletivo da Cubos
 
-![Travis Status](https://api.travis-ci.org/eduardoborges/react-dudu-starter.svg) [![GitHub issues](https://img.shields.io/github/issues/eduardoborges/react-dudu-starter.svg)](https://github.com/eduardoborges/react-dudu-starter/issues) [![GitHub stars](https://img.shields.io/github/stars/eduardoborges/react-dudu-starter.svg)](https://github.com/eduardoborges/react-dudu-starter/stargazers) [![GitHub license](https://img.shields.io/github/license/eduardoborges/react-dudu-starter.svg)](https://github.com/eduardoborges/react-dudu-starter)
+### Objetivo
 
-Um simples setup de react com ContextAPI
+Implementar um web app responsivo que consuma a API do The Movie DB e permita buscar e ver detalhes de filmes de seu catálogo.
 
-### :pencil: NPM Scripts
+### :pencil: Scripts
 
 ```shell
 $ npm start # ambiente de desenvolimento
@@ -46,4 +46,3 @@ $ npm run build:static # fazer build e tornar estatico
 - Arquitetura ITCSS :star2:
 - Arquitetura React Context API :star:
 - PWA Generator com Google Web Toolkit :rocket:
-- Sem _eject_ graças as React Rewire :sparkles:

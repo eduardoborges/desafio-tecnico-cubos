@@ -1,0 +1,32 @@
+.pagination
+  display: flex
+  justify-content: center
+  .pagination-item
+    display: inline-flex
+    width: 60px
+    height: 60px
+    color: $primary
+    justify-content: center
+    align-content: center
+    align-items: center
+    border-radius: 100px
+    margin: 0 10px
+    cursor: pointer
+    transition: .3s
+    &.is-active
+      border: 3px solid $primary
+      color: $primary-inverted
+      background: $primary-inverted
+      position: relative
+      z-index: 2
+      &::after
+        content: ""
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        transform: scale(0.9)
+        border-radius: 300px
+        background: $primary
+        z-index: -1

@@ -8,15 +8,20 @@ const API = axios.create({
 });
 
 export default class Movies {
-  static search(query) {
+  static search(query, page) {
     return API.get('/search/movie', {
       params: {
-        query: query
+        query: query,
+        page: page
       }
     });
   }
 
   static get(id) {
     return API.get(`movie/${id}`);
+  }
+
+  static getGenreList() {
+    return API.get('/genre/movie/list');
   }
 }

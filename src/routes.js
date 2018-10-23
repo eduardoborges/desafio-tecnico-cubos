@@ -5,7 +5,7 @@ import MoviesContainer from './containers/MoviesContainer';
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/" exact component={MoviesContainer} />
+      <Route path="/" component={MoviesContainer} />
       <Route path="*" render={() => <h1>Not Found</h1>} />
     </Switch>
   );
