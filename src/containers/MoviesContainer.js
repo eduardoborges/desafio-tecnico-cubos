@@ -18,7 +18,7 @@ const { Provider } = MainContext;
 
 class MainContainer extends Component {
   state = {
-    searchInput: 'avengers',
+    searchInput: '',
     searchResults: {
       page: 0,
       total_results: 0,
@@ -30,11 +30,8 @@ class MainContainer extends Component {
     genreList: []
   };
 
-  // just for simulate
-
   componentDidMount = () => {
     this.getGenreList();
-    this.onHandleSearch();
   };
 
   getGenreList = () => {

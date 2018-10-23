@@ -83,7 +83,18 @@ class MovieDetails extends Component {
                 <span>{movie.vote_average * 10}%</span>
               </span>
 
-              <div className="columns">{movie.video && movie.video}</div>
+              <div className="columns">
+                {movie.video && (
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  />
+                )}
+              </div>
             </div>
             <div className="column">
               <div className="cover">

@@ -9,7 +9,7 @@ Implementar um web app responsivo que consuma a API do The Movie DB e permita bu
 ```shell
 $ npm start # ambiente de desenvolimento
 $ npm run build # fazer build
-$ npm run build:static # fazer build e tornar estatico
+$ npm run deploy # fazer deploy no Surge
 ```
 
 ### :triangular_ruler: Estrutura de pastas
